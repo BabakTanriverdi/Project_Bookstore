@@ -21,11 +21,11 @@ provider "aws" {
 
 provider "github" {
   # Configuration options
-    token = data.aws_ssm_parameter.tocken.value
+    token = data.aws_ssm_parameter.token.value
 }
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter
-data "aws_ssm_parameter" "tocken" {
-  name = "babak-tocken" # The name of the parameter in AWS Systems Manager Parameter Store
+data "aws_ssm_parameter" "token" {
+  name = "babak-token" # The name of the parameter in AWS Systems Manager Parameter Store
 }
 
 variable "keyname" {
@@ -117,7 +117,7 @@ resource "aws_instance" "tf-docker-ec2" {
     }
 
     user_data = templatefile("userdata.sh", {
-        git-token = data.aws_ssm_parameter.tocken.value,
+        git-token = data.aws_ssm_parameter.token.value,
         git-username = var.gituser
         }
     )
@@ -145,7 +145,7 @@ resource "aws_instance" "tf-docker-ec2" {
 #     }
 
 #     user_data = templatefile("userdata.sh", {
-#         git-token    = data.aws_ssm_parameter.tocken.value,
+#         git-token    = data.aws_ssm_parameter.token.value,
 #         git-username = var.gituser
 #     })
     
