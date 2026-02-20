@@ -1,4 +1,11 @@
-# Project-203: Dockerization of Bookstore Web API (Python Flask) with MySQL
+<div align="center">
+
+![Project_Bookstore](./img/bookstore.png)
+
+</div>
+
+
+# Project-Bookstore: Dockerization of Bookstore Web API (Python Flask) with MySQL
 
 ## Description
 
@@ -7,7 +14,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 ## Problem Statement
 <div align="center">
 
-![Project_203](bookstore-api.png)
+![Project_Bookstore](./img/bookstore-api.pngbookstore-api.png)
 
 </div>
 
@@ -66,7 +73,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 ## Project Skeleton
 
 ```text
-203-dockerization-bookstore-api-on-python-flask-mysql (folder)
+Project_Bookstore (folder)
 |
 |----readme.md          # Given to the students (Definition of the project)
 |----bookstore-api.py   # Given to the students (Python Flask Web API)
@@ -119,7 +126,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ## Steps to Solution
   
-- Step 1: Download or clone the project definition from `clarusway-aws-workshop` repo on Github
+- Step 1: Download or clone the project definition from repo on Github
 
 - Step 2: Create a project folder for local public repo on your pc
 
