@@ -14,7 +14,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 ## Problem Statement
 <div align="center">
 
-![Project_Bookstore](./img/bookstore-api.pngbookstore-api.png)
+![Project_Bookstore](./img/bookstore-api.png)
 
 </div>
 
